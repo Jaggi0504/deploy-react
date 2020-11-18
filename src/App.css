@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'Kaushan Script', cursive;
+}
+.header-color {
+  background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'Kaushan Script', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.landing-grid {
+  background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'Kaushan Script', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.jagdeep-image {
+  height:450px;
+  width:400px;
+  border-radius:50%;
+  margin-left:460px;
+  animation:animate 5s ease-in-out;
+}
+@keyframes animate {
+  0% {
+    opacity:0.2;
+  }
+  25% {
+    opacity:0.5;
+  }
+  50% {
+    opacity:0.7;
+  }
+  75% {
+    opacity:0.9;
+  }
+  100% {
+    opacity:1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.banner-text {
+  background-color:black;
+  opacity:0.8;
+  margin:auto;
+  width:85%;
+  margin-top:35px;
+  border-radius:10px;
+}
+
+.banner-text h1 {
+  color:whitesmoke;
+  font-size:66px;
+  font-weight:bold;
+  text-align:center;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.banner-text hr {
+  border-top:5px dotted white;
+  width:50%;
+  margin:auto;
+}
+
+.banner-text p {
+  font-family: 'Playfair Display SC', serif;
+  color:white;
+  font-size:20px;
+  padding:1em;
+  text-align:center;
+}
+
+.p1 {
+  font-size:28px;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-grid {
+    width:84%;
+    display:flex;
+    flex-direction: column;
+  }
+  .projects-grid {
+    width:84%;
+    display:flex;
+    flex-direction:column;
+    margin:auto;
+    padding:10px;
+  }
+  .card-text {
+    font-size:10px;
+  }
+  .contact-body {
+    margin:auto;
+    background:grey;
+    position:fixed;
+    width:84%;
+    /* height:100%; */
+    justify-content: center;
+    /* padding-top:2em; */
+  }
+  .contact-img {
+    width:200px;
+    height:50px;
+    border-radius:5px;
+  }
+}
+
+.projects-grid {
+  display:flex;
+  flex-direction: row;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.contact-body {
+  margin:auto;
+  background:grey;
+  position:fixed;
+  width:100%;
+  height:100%;
+  justify-content: center;
+  padding-top:2em;
+}
+
+.about-body {
+  margin:auto;
+  background:linear-gradient(to right, purple, slateblue, purple);
+  position:fixed;
+  width:100%;
+  height:100%;
+  justify-content: center;
+  padding:2em;
+  
+}
+.about-cell {
+  margin:auto;
+  background:white;
+  position:fixed;
+  border-radius:25px;
+  justify-content: center;
+  padding-top:2em;
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width:80%;
+  height:550px;
+  background:white;
+  color:black;
+  border:2px dashed #1c029e;
+  margin-bottom:20px;
+  border-radius:25px;
+}
+
+.contact-grid hr {
+  border-top:5px dotted black;
+  width:50%;
+  margin:auto;
+}
+
+.resume-right-col {
+  background:#27221F;
+  color:white;
+  padding:2em;
+  border-radius:25px;
+}
+
+.contact-list i{
+  font-size:66px;
+  padding-right:3rem;
+}
+
+.social-links {
+  color:white;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-links i {
+  color:white;
+  font-size:10em;
+  padding:18px;
 }
