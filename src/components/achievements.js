@@ -11,9 +11,11 @@ class Achievements extends React.Component {
                     <h4 stlye={{fontSize:'12px'}}> {this.props.courseName} </h4>
 
                 </Cell>
-                <Cell col={8}>
-                    <h4 style={{ marginTop: '18px', fontSize:'18px' }}>{this.props.schoolName} </h4>
-                    <h4 style={{fontSize:'18px'}}> {this.props.schoolCity} </h4>
+                <Cell col={6}>
+                    <h4 style={{ marginTop: '18px', fontSize:'22px' }}>{this.props.schoolName} </h4>
+                </Cell>
+                <Cell col={2}>
+                    <h4 style={{fontSize:'18px'}}> {this.props.percentage} </h4>    
                 </Cell>
             </Grid>
         )

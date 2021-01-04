@@ -5,6 +5,7 @@ import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/main';
 
 class App extends React.Component {
+
   render() {
     return (
       <div className="demo-big-content">

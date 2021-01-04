@@ -8,12 +8,10 @@ import {Switch, Route} from 'react-router-dom'
 
 const Main = () => (
     <Switch>
-        <Route exact path="/deploy-react" component= {LandingPage} />
+        <Route path="/deploy-react" component= {LandingPage} />
         <Route path="/resume" component = {Resume} />
         <Route path="/project" component = {Project} />
         <Route path="/contact" component = {Contact} />
-
-
     </Switch>
 )
 

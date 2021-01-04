@@ -75,18 +75,11 @@ font-family: 'Kaushan Script', cursive;
   font-size:28px;
 }
 
-@media only screen and (max-width: 768px) {
+
   .card-grid {
     width:84%;
     display:flex;
     flex-direction: column;
-  }
-  .projects-grid {
-    width:84%;
-    display:flex;
-    flex-direction:column;
-    margin:auto;
-    padding:10px;
   }
   .card-text {
     font-size:10px;
@@ -105,7 +98,6 @@ font-family: 'Kaushan Script', cursive;
     height:50px;
     border-radius:5px;
   }
-}
 
 .projects-grid {
   display:flex;
@@ -146,7 +138,7 @@ font-family: 'Kaushan Script', cursive;
   text-align: center;
   justify-content: center;
   width:80%;
-  height:550px;
+  height:650px;
   background:white;
   color:black;
   border:2px dashed #1c029e;
@@ -170,16 +162,152 @@ font-family: 'Kaushan Script', cursive;
 .contact-list i{
   font-size:66px;
   padding-right:3rem;
+  margin-left:430px;
 }
+
 
 .social-links {
   color:white;
   text-align: center;
   align-items: center;
   justify-content: center;
+  
 }
 .social-links i {
   color:white;
   font-size:10em;
   padding:18px;
+}
+
+
+@media only screen and (max-width: 600px){
+  .contact-image {
+    display:none;
+  }
+  .contact-list {
+    font-size:25px;
+    margin:auto;
+    margin-top:70px;
+  }
+  .contact-phone, .contact-email, .contact-linkedin, .contact-github, .contact-contact {
+    display:none;
+  }
+  .contact-name {
+    font-size:40px;
+  }
+  .contact-body {
+    width:520px;
+    margin:auto;
+  }
+  .contact-number {
+    font-size:4px;
+  }
+  .contactContact, .contactEmail {
+    font-family:'sans-serif';
+    font-size:15px;
+  }
+  .contactGithub, .contactLinkedin {
+    font-size:15px;
+    font-family:'sans-serif';
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 600px){
+  .contact-list {
+    font-size:25px;
+    margin:auto;
+    margin-top:170px;
+    margin-left:40px;
+  }
+  .contact-phone, .contact-email, .contact-linkedin, .contact-github {
+    display: none;
+  }
+  .contact-name {
+    font-size:40px;
+  }
+  .contact-body {
+    width:900px;
+    margin:auto;
+  }
+  .contact-number {
+    font-size:4px;
+  }
+  .contactContact, .contactEmail {
+    font-size:20px;
+  }
+  .contactGithub, .contactLinkedin {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .jagdeep-image {
+    height:350px;
+    width:300px;
+    margin-left:80px;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 600px) {
+  .jagdeep-image {
+    margin-left:220px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .jagdeep-resumeImage {
+    margin-left:100px;
+  }
+  .resume-name {
+    margin-left:130px;
+  }
+  .resume-type, .resume-hr{
+    margin-left:150px;
+  }
+  .resume-aboutJagdeep {
+    width:100%;
+    margin-left:120px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skills-style {
+    font-size:20px;
+  }
+  .skills-backend {
+    margin-left:100px;
+  }
+  .skills-database {
+    margin-top:50px;
+  }
+  .skills-language {
+    margin-left:100px;
+    margin-top:1px;
+  }
+  .resume-achievements, .resume-education, .resume-skills {
+    text-align:center;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 600px) {
+  .skills-backend, .skills-database, .skills-language {
+    margin-left:5px;
+  }
+  .skills-style {
+    font-size:20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project-tab {
+    margin-top:50px;
+  }
+  .landing-title {
+    font-size:20px;
+  }
+  .card-grid {
+    width: 100px;
+    height:200px;
+    padding:10px;
+  }
 }

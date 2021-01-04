@@ -1,5 +1,6 @@
 import React from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText } from 'react-mdl';
+import '../App.css';
 
 class Project extends React.Component {
     constructor(props) {
@@ -70,7 +71,7 @@ class Project extends React.Component {
                             <Button colored href="https://github.com/Jaggi0504/EmployeeApp">Github</Button>
                         </CardActions>
                     </Card>
-                    <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+                    <Card shadow={5} style={{ minWidth: "450", margin: "auto" }} className="card-grid">
                         <CardTitle style={{ color: "purple", height: "176px", background: "url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRsh3v9WalFhu8Sd9QNAYWTo9ZPrhJAVOCElw&usqp=CAU) center/cover " }}>
                         </CardTitle>
                         <CardText style={{ color: "green", fontSize: "20px", fontFamily: 'Open Sans Condensed, sans-serif' }} className="card-text">
@@ -203,19 +204,48 @@ class Project extends React.Component {
                     </Card>
                 </div>
             )
-        }
+        } else if (this.state.activeTab === 5) {
+            return (
+                <div className="projects-grid">
+                    <Card shadow={5} style={{ minWidth: "450", margin: "auto" }} className="card-grid">
+                        <CardTitle style={{ color: "whitesmoke", height: "176px", background: "url(https://thumbs.dreamstime.com/z/javascript-logo-javascript-logo-white-background-vector-format-available-136765881.jpg) center / cover "  }}>
+                        </CardTitle>
+                        <CardText style={{ color: "green", fontSize: "20px", fontFamily: 'Open Sans Condensed, sans-serif' }}>F.R.I.E.N.D.S Quiz <hr />
+                        
+                    </CardText>
+                        <CardActions border>
+                            <Button colored href="https://jaggi0504.github.io/F.R.I.E.N.D.S/index.html">LIVE</Button>
+                        </CardActions>
+                    </Card>
+                    <Card shadow={5} style={{ minWidth: "450", margin: "auto" }} className="card-grid">
+                        <CardTitle style={{ color: "whitesmoke", height: "176px", background: "url(https://www.andreasreiterer.at/wp-content/uploads/2017/11/react-logo-825x510.jpg) center/cover "  }}>
+                        </CardTitle>
+                        <CardText style={{ color: "green", fontSize: "20px", fontFamily: 'Open Sans Condensed, sans-serif' }}> YouTube clone <hr />
+                        
+                    </CardText>
+                        <CardActions border>
+                            <Button colored href="https://jaggi0504.github.io/youTube/">LIVE</Button>
+                        </CardActions>
+                    </Card>
+                </div>
+            )
+        } 
     }
 
     render() {
         return (
             <div className='category-tabs'>
-                <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                    <Tab> JavaScript </Tab>
-                    <Tab> PHP </Tab>
-                    <Tab> React </Tab>
-                    <Tab> C++ </Tab>
-                    <Tab> HackCBS2.0 </Tab>
+                <div className = "project-tab">
+                <Tabs
+                activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+                    <Tab> <h1 style={{fontSize:"10px", marginTop:"14px"}}> JavaScript </h1> </Tab>
+                    <Tab> <h1 style={{fontSize:"10px", marginTop:"14px"}}> PHP </h1> </Tab>
+                    <Tab> <h1 style={{fontSize:"10px", marginTop:"14px"}}> React </h1> </Tab>
+                    <Tab> <h1 style={{fontSize:"10px", marginTop:"14px"}}> C++ </h1> </Tab>
+                    <Tab> <h1 style={{fontSize:"10px", marginTop:"14px"}}> HackCBS2.0 </h1> </Tab>
+                    <Tab> <h1 style={{fontSize:"10px", marginTop:"14px"}}>Live Projects </h1> </Tab>
                 </Tabs>
+                </div>
                 <Grid>
                     <Cell col={12}>
                         <div className="content">{this.toggleCategories()}</div>

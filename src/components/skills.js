@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, Cell } from 'react-mdl'
+import '../App.css';
 
 class Skills extends React.Component {
     render() {
@@ -7,35 +8,35 @@ class Skills extends React.Component {
 
             <Grid>
                 <Cell col={3}>
-                    <ul>
-                        <li> <h4> HTML</h4> </li>
-                        <li> <h4> CSS </h4></li>
-                        <li> <h4> Bootstrap </h4> </li>
-                        <li> <h4> JavaScript </h4> </li>
-                        <li> <h4> React.js </h4></li>
-                        <li> <h4> JQuery </h4></li>
+                    <ul className = "skills-frontend">
+                        <li> <h4 className="skills-style"> HTML</h4> </li>
+                        <li> <h4  className="skills-style"> CSS </h4></li>
+                        <li> <h4  className="skills-style"> Bootstrap </h4> </li>
+                        <li> <h4  className="skills-style"> JavaScript </h4> </li>
+                        <li> <h4  className="skills-style"> React.js </h4></li>
+                        <li> <h4  className="skills-style"> JQuery </h4></li>
 
                     </ul>
                 </Cell>
                 <Cell col={3}>
-                    <ul>
-                        <li> <h4 >PHP </h4> </li>
-                        <li> <h4> Node.js </h4> </li>
-                        <li> <h4> Express.js </h4> </li>
+                    <ul className = "skills-backend">
+                        <li> <h4 className="skills-style"> PHP </h4> </li>
+                        <li> <h4 className="skills-style"> Node.js </h4> </li>
+                        <li> <h4 className="skills-style"> Express.js </h4> </li>
                     </ul>
                 </Cell>
                 <Cell col={3}>
-                    <ul>
-                        <li> <h4> SQL </h4> </li>
-                        <li> <h4> MonogDB </h4> </li>
+                    <ul className = "skills-database">
+                        <li> <h4 className="skills-style"> SQL </h4> </li>
+                        <li> <h4 className="skills-style"> MonogDB </h4> </li>
                     </ul>
                 </Cell>
                 <Cell col={3}>
-                    <ul>
-                        <li> <h4> C++ </h4> </li>
-                        <li> <h4> Java </h4> </li>
-                        <li> <h4> Data Structures </h4> </li>
-                        <li> <h4> Algorithms </h4> </li>
+                    <ul className = "skills-language">
+                        <li> <h4 className="skills-style"> C++ </h4> </li>
+                        <li> <h4 className="skills-style"> Java </h4> </li>
+                        <li> <h4 className="skills-style"> Data Structures </h4> </li>
+                        <li> <h4 className="skills-style"> Algorithms </h4> </li>
                     </ul>
                 </Cell>
             </Grid>
